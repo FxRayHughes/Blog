@@ -1,14 +1,13 @@
 import {defineConfig} from 'vitepress';
-import {data as posts} from "../data/list.data";
 
-
-const pluginRouter = posts
-    .filter(post => hasTag(post.categories, 'plugin'))
-    .map(post => {
-        return {text: post.title, link: post.url}
-    }).sort((a, b) => {
-        return a.text.localeCompare(b.text)
-    })
+const bukkitPluginRouter = [
+    {text: 'Aboleth', link: '/posts/public/bukkitplugin/Aboleth'},
+    {text: 'AbolethPlus', link: '/posts/public/bukkitplugin/AbolethPlus'},
+    {text: 'MythicItemStyrke', link: '/posts/public/bukkitplugin/MythicItemStyrke'},
+    {text: 'ProSkillAPI', link: '/posts/public/bukkitplugin/ProSkillAPI'},
+    {text: 'Shop', link: '/posts/public/bukkitplugin/Shop'},
+    {text: 'SX-Item', link: '/posts/public/bukkitplugin/SX-Item'},
+]
 
 export default defineConfig({
     lang: 'zh-Hans',
@@ -28,7 +27,7 @@ export default defineConfig({
             {text: '文章索引', link: '/posts/nav/tags'},
             {
                 text: '插件列表',
-                items: pluginRouter,
+                items: bukkitPluginRouter,
             },
             {text: '关于枫溪', link: '/posts/nav/self'},
         ],
@@ -38,7 +37,7 @@ export default defineConfig({
                 {
                     text: 'BukkitPlugin',
                     collapsed: false,
-                    items: pluginRouter,
+                    items: bukkitPluginRouter,
                 },
             ],
         },
