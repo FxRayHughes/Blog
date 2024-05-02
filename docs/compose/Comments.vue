@@ -8,10 +8,10 @@ import Giscus from '@giscus/vue'
 
   <Giscus
       id="comments"
-      repo="Bukkit-Spring/bukkit-spigot-doc"
-      repoId="R_kgDOLznBSg"
+      repo="FxRayHughes/Blog"
+      repoId="R_kgDOL1-mIQ"
       category="Comments"
-      categoryId="DIC_kwDOLznBSs4Ce-rS"
+      categoryId="DIC_kwDOL1-mIc4CfFUB"
       mapping="pathname"
       term="preferred_color_scheme"
       reactionsEnabled="1"

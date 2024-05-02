@@ -1,10 +1,15 @@
+---
+title: "DataBase"
+date: "2021-09-01"
+---
+
 # 多数据源切换
 
 > [!IMPORTANT]
 > 本文依赖 Kotlin-Taboolib 拓展组件。
 
 ## 用法
-
+---
 只需要在需要操作的 行为 上进行注解 即可
 
 对本 Service 类中 所有的方法都切换到此数据源
@@ -14,6 +19,7 @@
 class PlayerDataService : ServiceImpl<PlayerDataMapper, PlayerData>(), IPlayerDataService {
 }
 ```
+
 
 对某方法进行切换
 ```kotlin

@@ -6,7 +6,7 @@ export default defineConfig({
     description: '枫溪个人博客',
     // base: '/Blog/',
     sitemap: {
-        hostname: 'https://example.com'
+        hostname: 'https://www.maplex.top'
     },
     themeConfig: {
         logo: '/my_avatar.png',
@@ -30,8 +30,8 @@ export default defineConfig({
                 text: '简介',
                 collapsed: false,
                 items: [
-                    {text: '什么是 BukkitSpring?', link: '/doc/info/what_is_bukkit_spring'},
-                    {text: '快速开始', link: '/doc/info/quick_start'},
+                    {text: '什么是 BukkitSpring?', link: '/article/info/what_is_bukkit_spring'},
+                    {text: '快速开始', link: '/article/info/quick_start'},
                 ],
             },
         ],
@@ -52,6 +52,16 @@ export default defineConfig({
         lightModeSwitchTitle: '切换到浅色模式',
         darkModeSwitchTitle: '切换到深色模式'
     },
+    head: [
+        [
+            'link',
+            {
+                rel: 'icon',
+                type: 'image/x-icon',
+                href: '/favicon.ico'
+            }
+        ],
+    ],
     transformHead({assets}) {
         // @ts-ignore
         const fontAsset = assets.find(() => /font-name\.\w+\.woff2/)
