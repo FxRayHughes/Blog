@@ -4,6 +4,7 @@ date: 2023-08-23 14:07:18
 categories:
   - "插件"
   - "免费"
+  - "Bukkit"
 ---
 
 # Shop I

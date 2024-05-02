@@ -11,14 +11,9 @@
 
 <script lang="ts" setup>
 import {defineProps} from 'vue'
-
-const tagData = [
-  {key: "#ee7959", value: "插件"},
-  {key: "#ecd452", value: "付费"},
-  {key: "#a9be7b", value: "免费"},
-  {key: "#5aa4ae", value: "杂谈"},
-  {key: "#32788a", value: "教程"},
-]
+import {tagsStore} from '../store/TagsStore'
+const tagStoreObj = tagsStore()
+const tagData = tagStoreObj.values
 
 let props = defineProps({
   tags: {

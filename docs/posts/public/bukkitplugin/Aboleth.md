@@ -4,6 +4,7 @@ date: 2023-08-23 13:24:07
 categories:
   - "插件"
   - "付费"
+  - "Bukkit"
 ---
 
 # Aboleth

@@ -4,6 +4,7 @@ date: 2023-08-23 13:29:26
 categories:
   - "插件"
   - "免费"
+  - "Bukkit"
 ---
 
 # ProSkillAPI

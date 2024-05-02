@@ -5,6 +5,7 @@ categories:
   - "插件"
   - "付费"
   - "教程"
+  - "Bukkit"
 ---
 
 # AbolethPlus - 全新的变量管理系统

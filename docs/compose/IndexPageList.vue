@@ -1,5 +1,5 @@
 <template>
-  <a-list id="list" item-layout="vertical" size="default" :pagination="pagination" :data-source="listData">
+  <a-list id="list" :split="false" item-layout="vertical" size="default" :pagination="pagination" :data-source="listData">
     <template #renderItem="{ item }">
       <a-list-item key="item.title">
         <a-card :body-style="cardStyle" :loading="loading" hoverable @click="pushTo(item.url)">

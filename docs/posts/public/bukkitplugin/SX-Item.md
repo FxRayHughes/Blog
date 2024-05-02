@@ -5,6 +5,7 @@ categories:
   - "插件"
   - "免费"
   - "教程"
+  - "Bukkit"
 ---
 
 # SX-Item
