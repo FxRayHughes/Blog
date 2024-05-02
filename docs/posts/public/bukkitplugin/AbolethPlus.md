@@ -4,8 +4,11 @@ date: 2023-09-05 08:53:43
 categories:
   - "插件"
   - "付费"
+  - "教程"
 ---
+
 # AbolethPlus - 全新的变量管理系统
+
 <blog-overview></blog-overview>
 
 > [!CAUTION]
@@ -46,7 +49,7 @@ categories:
 
 ![指令列表](/img/blog/image-20230906155920200.png)
 
-主要唤起指令是  /abolethplus 也可以使用别名 /abp
+主要唤起指令是 /abolethplus 也可以使用别名 /abp
 
 子指令也可以通过全程和别名进行唤醒 /abolethplusedit 可以简写为/abpe
 
@@ -139,15 +142,11 @@ categories:
 
 > 获取变量排行榜
 
-
-
 ### 关于全局变量
 
 插件抽象了个玩家 叫做 BukkitServer 别名 server （已封禁这两个玩家ID）
 
 对这两个ID进行操作即可操作全局变量 相当于是操作服务器的变量
-
-
 
 ## AbolethPlusEditED 语法
 
@@ -197,8 +196,6 @@ action 为 + 可以参考指令模块
 
 设置变量一天后过期
 
-
-
 ## 操作日志
 
 你的所有 操作 除了get 外 都会进行记录
@@ -206,8 +203,6 @@ action 为 + 可以参考指令模块
 可以用第三方数据库查看工具进行查看
 
 ![sql](/img/blog/image-20230906162440393.png)
-
-
 
 ## 调度器
 
@@ -221,9 +216,11 @@ action 为 + 可以参考指令模块
 
 也是调度器的一种使用方式 但是给抽离出来了 单独封装好提供给用户使用
 只需要在配置文件 `update.yml` 里面书写 K:Value 就可以啦
+
 ```yaml
 体力: 200
 ```
+
 如此简单 然后就会进行刷新？
 其实刷新的说法并不准确 实际上是一个调度器 然后每秒去判断玩家的 Update_Key 变量时间
 不等于当日就进行刷新
@@ -246,7 +243,7 @@ TaskPlayer:
 
 ##### online
 
-全体在线玩家没有就不执行 支持变量<target.name> <target.uuid> action语法: kether 
+全体在线玩家没有就不执行 支持变量<target.name> <target.uuid> action语法: kether
 
 ##### online ed
 
@@ -270,15 +267,13 @@ TaskPlayer:
 
 ##### player
 
-当玩家进入游戏后 增加一个跟随的调度器 玩家离开后 调度器 结束  语法：Kether
+当玩家进入游戏后 增加一个跟随的调度器 玩家离开后 调度器 结束 语法：Kether
 
-注：player模式下 cron位置填写 tick 
+注：player模式下 cron位置填写 tick
 
 进入游戏后 延迟 tick 然后触发一次 然后接下来 按照这个频率进行周期调度
 
 调度为同步调度 无异步操作
-
-
 
 ### Cron 时间区间
 
@@ -297,8 +292,6 @@ TaskPlayer:
 <target.uuid> 代表了执行者的UUID
 
 <target.name> 代表了执行者的name
-
-
 
 ## papi变量
 
@@ -384,20 +377,17 @@ TaskPlayer:
 1. key (必填) 变量名
 2. format 格式 小数格式
 
-
 #### 获取调度器时间
 
 > %abp_task -id TaskPlayer -format yyyy-MM-dd_hh:mm:ss -type next/last%
 
 获取调度器的上一次时间 与下一次时间 可以自定义格式
 
-
-
 ## Kether (@嘿鹰)
 
 ### 编辑变量
 
-公有语句: **abolethplusedit** (别名: **abpe**) 
+公有语句: **abolethplusedit** (别名: **abpe**)
 
 * abpe 变量名 (操作符) 变量值 [可选: @ (sever|玩家ID)] [可选: mark "操作记录"]
 
@@ -428,7 +418,7 @@ TaskPlayer:
 
 ### 获取变量
 
-公有语句: **abolethplusget** (别名: **abpg**) 
+公有语句: **abolethplusget** (别名: **abpg**)
 
 * abpg {action} [def [{action}]] [@ (server|ID)]
 
@@ -449,8 +439,6 @@ TaskPlayer:
 > abpg key def
 > ```
 
-
-
 ## API
 
 如何基于AbolethPlus 开发附属呢？
@@ -461,8 +449,6 @@ TaskPlayer:
 
 入口为 AbolethPlusAPI 也可以使用一些复杂的自定义操作 入口为 AbolethDao
 
-
-
 ### 发布公开插件？
 
 你需要使用通用接口 AbolethAdder.jar http://maplefx.top:6520/s/m4akpl
@@ -471,15 +457,9 @@ TaskPlayer:
 
 使用AbolethAdder开发插件 方便你我 方便社区~
 
-
-
 额外说明 当你使用Get 获取到 AbolethDtoAdp 对象的时候
 
 你可以使用 AbolethDtoAdp内置的 setValue / setOverTime 方法 这会**被动**更新这个数据库 这也是**ORM**设计的一种体现
-
-
-
-
 
 ## 从1.0迁移到2.0
 
@@ -492,8 +472,6 @@ TaskPlayer:
 5. 输入/aboleth toUp
 6. 检查数据库
 7. 完成
-
-
 
 ## 评论
 

@@ -6,10 +6,10 @@
           <a-list-item-meta>
             <template #title>
               <a class="blog_title">{{ item.title }}</a>
+              <blog-tags :tags="item.categories"></blog-tags>
             </template>
           </a-list-item-meta>
           <a style="color: #9aa7b1">{{ item.excerpt }}</a>
-
           <footer style="margin-top: 8px">枫溪 | {{ item.date.string }}</footer>
         </a-card>
       </a-list-item>
@@ -20,11 +20,13 @@
 import {data as posts} from '../data/list.data.ts'
 import {type CSSProperties, ref} from 'vue';
 import {useRouter} from "vitepress";
+import BlogTags from "./BlogTags.vue";
 
 let router = useRouter();
 const cardStyle: CSSProperties = {
   background: 'var(--vp-c-bg)',
 };
+
 function pushTo(path: string) {
   router.go(path);
 }
@@ -48,6 +50,7 @@ for (let i = 0; i < posts.length; i++) {
     url: posts[i].url,
     excerpt: removeHtmlTags(posts[i].excerpt),
     date: posts[i].date,
+    categories: posts[i].categories,
   });
 }
 
@@ -71,10 +74,14 @@ function removeHtmlTags(text: string): string {
       .replace("ZeroWidthSpace", ",");
 }
 </script>
-<style scoped>
+<style>
 .blog_title {
   font-size: 20px;
   font-weight: bold;
+}
+
+.ant-list-item-meta-title{
+  margin-bottom: 0 !important;
 }
 
 </style>

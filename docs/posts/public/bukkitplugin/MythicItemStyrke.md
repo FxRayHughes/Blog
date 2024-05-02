@@ -4,9 +4,11 @@ date: 2023-08-23 12:26:22
 categories:
   - "插件"
   - "免费"
+  - "教程"
 ---
 
 # MythicItemStyrke
+
 <blog-overview></blog-overview>
 
 ## 前言
@@ -17,7 +19,7 @@ categories:
 
 ## 功能说明
 
-监听事件 对MM 与 SX-Item的物品进行反馈
+监听事件 对MM 与 SX-Item的物品进行反馈.
 
 ### 指令
 
@@ -169,16 +171,19 @@ random: 2 抽取两条
 20是权重
 
 ### ItemsAdderHook
+
 物品里这样写 材质就会替换为 ItemsAdder
+
 ```yaml
 工具_便携末影箱:
   Id: WARPED_SIGN
   Display: '&7 便携工具 [&f 末影箱&7]'
   Lore:
-  - " "
-  - "&8 右键打开末影箱"
+    - " "
+    - "&8 右键打开末影箱"
   ItemsAdder: "test:item"
 ```
+
 好处是 很稳健 只要内部ID不变 外部ID随便去变换
 
 #### 冷却
@@ -220,7 +225,6 @@ mm 默认null local 默认false abo默认 false
 *部分代码创意来自: https://github.com/TabooLib/zaphkiel*
 
 #### Kether脚本 https://kether.tabooproject.org/
-
 
 ## 评论
 
