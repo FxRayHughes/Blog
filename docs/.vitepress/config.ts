@@ -4,7 +4,7 @@ export default defineConfig({
     lang: 'zh-Hans',
     title: '枫溪博客',
     description: '枫溪个人博客',
-    base: '/blog/',
+    base: '/Blog/',
     sitemap: {
         hostname: 'https://example.com'
     },
