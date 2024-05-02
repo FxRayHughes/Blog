@@ -7,13 +7,25 @@
       <ClockCircleOutlined/> {{ timestampToTime(router.route.data.lastUpdated) }}
     </span>
   </a-flex>
+  <a-flex style="margin-top: 20px">
+    <a-tag v-for="item in router.route.data.frontmatter.categories"
+           :key="item" :color="getTagColor(item)">
+      {{ item }}
+    </a-tag>
+  </a-flex>
 </template>
 
 <script lang="ts" setup>
 import {UserOutlined, ClockCircleOutlined} from "@ant-design/icons-vue";
 import {useRouter} from "vitepress";
+import {tagsStore} from "../store/TagsStore";
 
+let tagStoreObj = tagsStore();
 let router = useRouter();
+
+function getTagColor(tag: string): string {
+  return tagStoreObj.values.find((item) => item.value === tag)?.key || 'default';
+}
 
 // 时间戳转日期
 function timestampToTime(timestamp: number) {
