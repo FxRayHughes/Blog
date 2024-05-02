@@ -2,9 +2,9 @@ import {defineConfig} from 'vitepress';
 
 export default defineConfig({
     lang: 'zh-Hans',
-    title: 'BukkitSpringDoc',
-    description: 'Bukkit与Spring的融合',
-    base: '/bukkit-spigot-doc/',
+    title: '枫溪博客',
+    description: '枫溪个人博客',
+    base: '/blog/',
     sitemap: {
         hostname: 'https://example.com'
     },
