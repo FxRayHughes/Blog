@@ -7,6 +7,7 @@ categories:
 ---
 
 # MythicItemStyrke
+<blog-overview></blog-overview>
 
 ## 前言
 
@@ -220,3 +221,16 @@ mm 默认null local 默认false abo默认 false
 
 #### Kether脚本 https://kether.tabooproject.org/
 
+
+## 评论
+
+<br/>
+
+<comments></comments>
+
+<script setup>
+
+import Comments from '../../../compose/Comments.vue';
+import BlogOverview from '../../../compose/BlogOverview.vue';
+
+</script>

@@ -6,6 +6,7 @@ categories:
   - "付费"
 ---
 # AbolethPlus - 全新的变量管理系统
+<blog-overview></blog-overview>
 
 > [!CAUTION]
 > AbolethPlus目前维护并不积极。
@@ -492,8 +493,17 @@ TaskPlayer:
 6. 检查数据库
 7. 完成
 
-## 更新日志
 
-### 2.1.2
 
-第一个测试版本
+## 评论
+
+<br/>
+
+<comments></comments>
+
+<script setup>
+
+import Comments from '../../../compose/Comments.vue';
+import BlogOverview from '../../../compose/BlogOverview.vue';
+
+</script>

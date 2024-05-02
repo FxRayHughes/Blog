@@ -7,6 +7,7 @@ categories:
 ---
 
 # SX-Item
+<blog-overview></blog-overview>
 
 ## 前言
 
@@ -480,3 +481,16 @@ fun itemsAdder(event: SXItemUpdateEvent) {
 %sxitem_r:6_7%
 ```
 
+
+## 评论
+
+<br/>
+
+<comments></comments>
+
+<script setup>
+
+import Comments from '../../../compose/Comments.vue';
+import BlogOverview from '../../../compose/BlogOverview.vue';
+
+</script>

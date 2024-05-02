@@ -7,6 +7,7 @@ categories:
 ---
 
 # Shop I
+<blog-overview></blog-overview>
 
 ## 前言
 这是 FomalhautShop 的前身
@@ -22,3 +23,17 @@ categories:
 ## 获取最新版
 
 加群即可 830192024
+
+
+## 评论
+
+<br/>
+
+<comments></comments>
+
+<script setup>
+
+import Comments from '../../../compose/Comments.vue';
+import BlogOverview from '../../../compose/BlogOverview.vue';
+
+</script>

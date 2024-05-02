@@ -7,6 +7,7 @@ categories:
 ---
 
 # Aboleth
+<blog-overview></blog-overview>
 
 ## 前言
 
@@ -21,3 +22,17 @@ https://xv5zac7cto.feishu.cn/docx/doxcnP4k0XN7IK7pcugdodQlJLh
 ## 获取
 
 此插件为付费插件(100r)购买请加作者联系方式
+
+
+## 评论
+
+<br/>
+
+<comments></comments>
+
+<script setup>
+
+import Comments from '../../../compose/Comments.vue';
+import BlogOverview from '../../../compose/BlogOverview.vue';
+
+</script>

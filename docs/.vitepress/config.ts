@@ -17,6 +17,7 @@ export default defineConfig({
     sitemap: {
         hostname: 'https://www.maplex.top'
     },
+    lastUpdated: true,
     themeConfig: {
         logo: '/my_avatar.png',
         search: {
