@@ -1,8 +1,4 @@
 <script setup>
-import { data as posts } from '../data/list.data.ts'
-
-console.log(posts)
-
 </script>
 
 <template>

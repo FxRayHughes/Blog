@@ -24,6 +24,7 @@ export default defineConfig({
             provider: 'local'
         },
         nav: [
+            {text: '文章索引', link: '/posts/nav/tags'},
             {
                 text: '插件列表',
                 items: bukkitPluginRouter,
