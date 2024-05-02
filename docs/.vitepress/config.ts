@@ -1,13 +1,14 @@
 import {defineConfig} from 'vitepress';
+import {data as posts} from "../data/list.data";
 
-const bukkitPluginRouter = [
-    {text: 'Aboleth', link: '/posts/public/bukkitplugin/Aboleth'},
-    {text: 'AbolethPlus', link: '/posts/public/bukkitplugin/AbolethPlus'},
-    {text: 'MythicItemStyrke', link: '/posts/public/bukkitplugin/MythicItemStyrke'},
-    {text: 'ProSkillAPI', link: '/posts/public/bukkitplugin/ProSkillAPI'},
-    {text: 'Shop', link: '/posts/public/bukkitplugin/Shop'},
-    {text: 'SX-Item', link: '/posts/public/bukkitplugin/SX-Item'},
-]
+
+const pluginRouter = posts
+    .filter(post => hasTag(post.categories, 'plugin'))
+    .map(post => {
+        return {text: post.title, link: post.url}
+    }).sort((a, b) => {
+        return a.text.localeCompare(b.text)
+    })
 
 export default defineConfig({
     lang: 'zh-Hans',
@@ -27,7 +28,7 @@ export default defineConfig({
             {text: '文章索引', link: '/posts/nav/tags'},
             {
                 text: '插件列表',
-                items: bukkitPluginRouter,
+                items: pluginRouter,
             },
             {text: '关于枫溪', link: '/posts/nav/self'},
         ],
@@ -37,7 +38,7 @@ export default defineConfig({
                 {
                     text: 'BukkitPlugin',
                     collapsed: false,
-                    items: bukkitPluginRouter,
+                    items: pluginRouter,
                 },
             ],
         },
@@ -87,3 +88,12 @@ export default defineConfig({
         }
     }
 });
+
+function hasTag(tags: string[], tag: string): boolean {
+    for (let tag1 of tags) {
+        if (tag1 == tag) {
+            return true;
+        }
+    }
+    return false;
+}
