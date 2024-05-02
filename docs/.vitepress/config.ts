@@ -1,5 +1,14 @@
 import {defineConfig} from 'vitepress';
 
+const bukkitPluginRouter = [
+    {text: 'Aboleth', link: '/posts/public/bukkitplugin/Aboleth'},
+    {text: 'AbolethPlus', link: '/posts/public/bukkitplugin/AbolethPlus'},
+    {text: 'MythicItemStyrke', link: '/posts/public/bukkitplugin/MythicItemStyrke'},
+    {text: 'ProSkillAPI', link: '/posts/public/bukkitplugin/ProSkillAPI'},
+    {text: 'Shop', link: '/posts/public/bukkitplugin/Shop'},
+    {text: 'SX-Item', link: '/posts/public/bukkitplugin/SX-Item'},
+]
+
 export default defineConfig({
     lang: 'zh-Hans',
     title: '枫溪',
@@ -14,27 +23,22 @@ export default defineConfig({
             provider: 'local'
         },
         nav: [
-            // {text: '开发成员', link: '/team'},
-            // {
-            //   text: 'Dropdown Menu',
-            //   items: [
-            //     { text: 'Item A', link: '/item-1' },
-            //     { text: 'Item B', link: '/item-2' },
-            //     { text: 'Item C', link: '/item-3' },
-            //   ],
-            // },
+            {
+                text: '插件列表',
+                items: bukkitPluginRouter,
+            },
+            {text: '关于枫溪', link: '/posts/nav/self'},
         ],
 
-        sidebar: [
-            {
-                text: '简介',
-                collapsed: false,
-                items: [
-                    {text: '什么是 BukkitSpring?', link: '/article/info/what_is_bukkit_spring'},
-                    {text: '快速开始', link: '/article/info/quick_start'},
-                ],
-            },
-        ],
+        sidebar: {
+            '/posts/public/bukkitplugin': [
+                {
+                    text: 'BukkitPlugin',
+                    collapsed: false,
+                    items: bukkitPluginRouter,
+                },
+            ],
+        },
         docFooter: {
             prev: '上一页',
             next: '下一页'
