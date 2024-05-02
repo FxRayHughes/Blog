@@ -24,7 +24,7 @@ categories:
 
 <script setup>
 
-import Comments from '../../../compose/Comments.vue';
-import BlogOverview from '../../../compose/BlogOverview.vue';
+import Comments from '../../compose/Comments.vue';
+import BlogOverview from '../../compose/BlogOverview.vue';
 
 </script>
