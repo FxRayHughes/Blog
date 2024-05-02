@@ -1,27 +1,6 @@
 ---
 layout: home
 
-features:
-  - icon:
-      src: /kotlin-color.svg
-    title: Kotlin 拓展工具
-    details: 基于 Taboolib & Kotlin 开发的一些工具
-    link: https://github.com/Bukkit-Spring/Bukkit-Spring-Kotlin-Expansion
-  - icon:
-      src: /项目级代码协作.svg
-    title: 优秀项目推荐
-    details: 等待您的申请
-    link: https://github.com/Bukkit-Spring/Bukkit-Spring-Kotlin-Expansion
-  - icon:
-      src: /项目级代码协作.svg
-    title: 优秀项目推荐
-    details: 等待您的申请
-    link: https://github.com/Bukkit-Spring/Bukkit-Spring-Kotlin-Expansion
-  - icon:
-      src: /项目级代码协作.svg
-    title: 优秀项目推荐
-    details: 等待您的申请
-    link: https://github.com/Bukkit-Spring/Bukkit-Spring-Kotlin-Expansion
 hero:
   name: BukkitSpring
   text: SpringBoot to Bukkit

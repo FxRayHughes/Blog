@@ -1,30 +1,20 @@
+@font-face {
+    font-family: "阿里妈妈方圆体";
+    src: url("AlimamaFangYuanTiVF-Thin.woff2") format("woff2"),
+    url("AlimamaFangYuanTiVF-Thin.woff") format("woff");
+    font-display: swap;
+}
+
 :root {
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(53deg, #fff720, #3cd500);
+    /*!*--vp-home-hero-name-color: transparent;*!*/
+    /*!*--vp-home-hero-name-background: -webkit-linear-gradient(53deg, #fff720, #3cd500);*!*/
 
-    --vp-c-indigo-1: #84a729;
-    --vp-c-indigo-2: #9ebc19;
-    --vp-c-indigo-3: #b7d332;
-    --vp-c-indigo-soft: rgba(100, 108, 255, 0.14);
-}
+    /*!*--vp-c-indigo-1: #84a729;*!*/
+    /*!*--vp-c-indigo-2: #9ebc19;*!*/
+    /*!*--vp-c-indigo-3: #b7d332;*!*/
+    /*!*--vp-c-indigo-soft: rgba(100, 108, 255, 0.14);*!*/
 
-.VPHomeHero {
-    /*transform: translateY(30%) !important;*/
-    padding-top: 25vh !important;
-}
+    --vp-font-family-base: "阿里妈妈方圆体", 'Punctuation SC', 'Inter', ui-sans-serif, system-ui, 'PingFang SC', 'Noto Sans CJK SC', 'Noto Sans SC', 'Heiti SC', 'DengXian', 'Microsoft YaHei', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
+    --vp-font-family-mono: "阿里妈妈方圆体", 'Punctuation SC', 'Inter', ui-sans-serif, system-ui, 'PingFang SC', 'Noto Sans CJK SC', 'Noto Sans SC', 'Heiti SC', 'DengXian', 'Microsoft YaHei', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
 
-/*a[href="https://qm.qq.com/q/1IlR7pdusU"].VPButton {*/
-/*    !* 在这里添加你想要的样式 *!*/
-/*    background-color: rebeccapurple !important;*/
-/*}*/
-
-a[href="/bukkit-spigot-doc/doc/info/what_is_bukkit_spring.html"].VPButton {
-    /* 在这里添加你想要的样式 */
-    background: linear-gradient(55deg, #dce35b, #45b649) !important;
-}
-
-a[href="/bukkit-spigot-doc/doc/info/what_is_bukkit_spring.html"].VPButton:hover {
-    /* 在这里添加你想要的样式 */
-    background: linear-gradient(55deg, #b8be49, #2f8d33) !important;
-    transition: color 0.25s, border-color 0.25s, background-color 0.25s !important;
 }

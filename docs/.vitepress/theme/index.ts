@@ -1,5 +1,5 @@
 import type {Theme} from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from 'vitepress/theme-without-fonts'
 import {createPinia} from 'pinia'
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/reset.css';
