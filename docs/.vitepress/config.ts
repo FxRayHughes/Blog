@@ -63,7 +63,8 @@ export default defineConfig({
                         rel: 'preload',
                         href: fontAsset,
                         as: 'font',
-                        type: 'font/woff2'
+                        type: 'font/woff2',
+                        crossorigin: 'anonymous'
                     }
                 ]
             ]
