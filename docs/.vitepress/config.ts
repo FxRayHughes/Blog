@@ -31,7 +31,9 @@ export default defineConfig({
             },
             {text: '关于枫溪', link: '/posts/nav/self'},
         ],
-
+        socialLinks: [
+            {icon: 'github', link: 'https://github.com/FxRayHughes/Blog'},
+        ],
         sidebar: {
             '/posts/public/bukkitplugin': [
                 {

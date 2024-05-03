@@ -5,14 +5,19 @@ export const tagsStore = defineStore('tags', {
         return {
             values: [
                 {index: 1, key: "#ee7959", value: "插件"},
+                {index: 1, key: "#da9233", value: "Bukkit"},
+
                 {index: 10, key: "#ecd452", value: "付费"},
                 {index: 10, key: "#a9be7b", value: "免费"},
+
                 {index: 20, key: "#5aa4ae", value: "杂谈"},
                 {index: 20, key: "#32788a", value: "教程"},
+                {index: 20, key: "#4f794a", value: "生活"},
+                {index: 20, key: "#354e6b", value: "学习"},
+                {index: 20, key: "#e94829", value: "游戏"},
+
                 {index: 30, key: "#b1d5c8", value: "前端"},
                 {index: 30, key: "#615ea8", value: "后端"},
-                {index: 1, key: "#da9233", value: "Bukkit"},
-                {index: 20, key: "#4f794a", value: "生活"}
             ]
         }
     },
