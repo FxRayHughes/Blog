@@ -19,7 +19,7 @@ export default defineConfig({
     },
     lastUpdated: true,
     themeConfig: {
-        logo: 'https://maplex.oss-cn-beijing.aliyuncs.com/my_avatar.png',
+        logo: '/my_avatar.png',
         search: {
             provider: 'local'
         },
