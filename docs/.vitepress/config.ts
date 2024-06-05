@@ -13,7 +13,7 @@ export default defineConfig({
     lang: 'zh-Hans',
     title: '枫溪',
     description: '枫溪个人博客',
-    // base: '/Blog/',
+    base: '/Blog/',
     sitemap: {
         hostname: 'https://www.maplex.top'
     },
